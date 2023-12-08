@@ -18,24 +18,55 @@
 .overflow_hidden {
   overflow: hidden;
 }
+/* preloader */
 
+.wavy {
+  position: relative;
+
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+.wavy span {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  margin-top: 50%;
+  font-family: "Plus Jakarta Sans";
+  text-transform: uppercase;
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+    color: yellow;
+    opacity: 0.2;
+  }
+  20% {
+    transform: translateY(-20px);
+    color: var(--blue);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* back-to-top */
 .myBtn {
   rotate: 270deg;
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 4;
+  bottom: 1px;
+  right: 7px;
+  z-index: 2;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 7px;
   border-radius: 100%;
 }
-.acc-img-set {
-  width: 21%;
-  height: 21%;
-}
+
 .border_r {
   width: 25px;
   height: 25px;
@@ -48,7 +79,7 @@
 
 .crossLine2 {
   rotate: 127deg;
-  bottom: 35%;
+  bottom: 40%;
 }
 .gap_40 {
   gap: 40px;
@@ -270,31 +301,8 @@ nav ul li a:hover::before {
 .mt-90 {
   margin-top: 110px;
 }
-@media (max-width: 992px) {
-  .blur-card {
-    position: unset;
-  }
 
-  .blur-card-2 {
-    position: unset;
-  }
-
-  .blur-card-3 {
-    position: unset;
-  }
-
-  .blur-card-4 {
-    position: unset;
-  }
-
-  .sec-2-card-1 {
-    width: 250px;
-    text-align: center;
-    justify-content: center;
-  }
-}
 /* sec-2*/
-
 .accordion-button {
   color: var(--gray2) !important;
   transition: all 500ms linear !important;
@@ -336,7 +344,10 @@ nav ul li a:hover::before {
   --bs-accordion-active-color: #0389ff !important;
   --bs-accordion-active-padding-bottom: 7px !important;
 }
-
+.acc-img-set {
+  width: 21%;
+  height: 21%;
+}
 .accordion-button:focus {
   border-color: none !important;
 }
@@ -349,86 +360,62 @@ nav ul li a:hover::before {
   font-size: var(--fs-xl) !important;
 }
 /*sec-3*/
-
 .card_acc {
   border-radius: 10px;
   background: rgba(3, 137, 255, 0.12) !important;
   backdrop-filter: blur(12.5px);
 }
+
 .pb_80 {
   padding-bottom: 80px;
 }
 /* slide-dot */
 
-.slick_slider_one .slick-track {
+.s5-slider .slick-dots {
   display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  gap: 9px;
+  justify-content: center;
+  position: unset !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.slick_slider_one .slick-slide {
-  margin-bottom: 15px;
+.s5-slider .slick-dots li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 18px;
+  background: var(--white);
+  margin: 0 !important;
 }
 
-.slick_slider_one .slick-dots {
-  margin-top: 20px;
-  position: unset;
+.s5-slider .slick-dots li button:before {
+  content: unset;
 }
 
-.slick_slider_one .slick-dots li.slick-active button:before {
-  width: 55px;
-  height: 11px;
-  opacity: 1;
-  color: var(--white);
-  margin-left: -12px;
+.s5-slider .slick-dots li.slick-active {
+  background: var(--blue);
+  width: 53px !important;
+  height: 10px !important;
+  border-radius: 18px;
 }
 
-.slick_slider_one .slick-dots li {
-  width: 36px;
-  margin-left: 7px;
-  margin-right: 7px;
+.s5-slider .slick-track {
+  margin-left: unset !important;
 }
 
-.slick_slider_one .slick-dots li button:before {
-  height: 11px;
-  width: 31px;
-  background-color: var(--white);
-  position: absolute;
-  left: 50%;
-  border-radius: 34px;
-  font-size: 0;
-  margin-left: -3px;
+.s5-slider .slick-current {
+  opacity: 100%;
 }
 
-.slick_slider_one .slick-dots {
-  margin-top: 20px;
-  position: unset;
+.s5-slider .slick-prev:before,
+.slick-next:before {
+  display: none;
 }
 
-.slick_slider_one .slick-dots li.slick-active button:before {
-  width: 53px;
-  height: 10px;
-  border-radius: 28px;
-  color: var(--blue);
-  margin-left: -12px;
+.s5-slider .slick-next {
+  right: 0px !important;
 }
 
-.slick_slider_one .slick-dots li {
-  width: 36px;
-  margin-left: 7px;
-  margin-right: 7px;
-}
-
-.slick_slider_one .slick-dots li button:before {
-  height: 11px;
-  width: 11px;
-  background-color: var(--white);
-  position: absolute;
-  left: 50%;
-  border-radius: 34px;
-  font-size: 0;
-  margin-left: 9px;
-}
 /*sec-4*/
 
 .slider_card {
@@ -624,7 +611,7 @@ input::placeholder {
 .btn_input {
   border-radius: 30px;
   background: linear-gradient(175deg, rgba(0, 136, 255, 0.58) 0%, #0069e3 100%);
-  padding: 10px 16px;
+  padding: 10px 12px;
   color: var(--white) !important;
   border: 1px solid transparent !important;
   transition: all 500ms linear;
@@ -843,11 +830,37 @@ input::placeholder {
   .show {
     left: 0%;
   }
+  .blur-card {
+    position: unset;
+  }
+
+  .blur-card-2 {
+    position: unset;
+  }
+
+  .blur-card-3 {
+    position: unset;
+  }
+
+  .blur-card-4 {
+    position: unset;
+  }
+
+  .sec-2-card-1 {
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 576px) {
   .border_l {
     border-right: 2px solid transparent;
+  }
+
+  .myBtn {
+    bottom: 12px;
+    right: 30px;
   }
   .accordion-body {
     padding-left: 27px !important;
@@ -901,6 +914,9 @@ input::placeholder {
   }
   .w_sm_80 {
     width: 80%;
+  }
+  .wavy span {
+    font-size: 50px;
   }
   .sec-2-card-1 {
     padding: 7px 15px;

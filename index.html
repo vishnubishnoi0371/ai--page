@@ -66,6 +66,24 @@
   </head>
 
   <body class="bg_primeblue">
+    <!-- preloader -->
+    <div
+      id="preloder"
+      class="min-vh-100 bg-black d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 z-3"
+    > <div class="wavy">
+       <span class="loader_set" style="--i:1;">L</span>
+       <span class="loader_set" style="--i:2;">o</span>
+       <span class="loader_set" style="--i:3;">a</span>
+       <span class="loader_set" style="--i:4;">d</span>
+       <span class="loader_set" style="--i:5;">i</span>
+       <span class="loader_set" style="--i:6;">n</span>
+       <span class="loader_set" style="--i:7;">g</span>
+       <span class="loader_set" style="--i:8;">.</span>
+       <span class="loader_set" style="--i:9;">.</span>
+       <span class="loader_set" style="--i:10;">.</span>
+   </div></div>
+
+    <!-- back-to-top -->
     <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top">
       <img
         class="border_r back_top"
@@ -75,7 +93,7 @@
     </button>
     <!-- navbar -->
     <header>
-      <div class="bg_bluedark sticky-top">
+      <div class="bg_bluedark sticky-top z-2">
         <div class="container-fluid ff-jak">
           <nav class="d-flex justify-content-between align-items-center py-3">
             <a href=" # "
@@ -128,8 +146,13 @@
                   AI powered document compliance solution
                 </p>
               </div>
-              <div data-aos="fade-left" class="col-xl-5 col-md-6 pt-2  pt-sm-4 pt-md-0">
-                <p class="text_gray fs_lg fw-normal pb-2 pb-sm-3 mb-sm-2 hero_phara">
+              <div
+                data-aos="fade-left"
+                class="col-xl-5 col-md-6 pt-2 pt-sm-4 pt-md-0"
+              >
+                <p
+                  class="text_gray fs_lg fw-normal pb-2 pb-sm-3 mb-sm-2 hero_phara"
+                >
                   iDox.ai provides the world’s most advanced AI powered
                   redaction solution for organizations to scan and detect within
                   document management systems, folders, and multitude of file
@@ -147,183 +170,149 @@
       <div class="d-flex justify-content-center pb-5 overflow">
         <div class="container overflow_hidden position-relative">
           <div class="d-flex justify-content-center align-items-center">
-            <img class="w_sm_80 w_90 pb-sm-5 pb-3" src="./assets/image/Dashboard.png" alt="hero-img" />
+            <img
+              class="w_sm_80 w_90 pb-sm-5 pb-3"
+              src="./assets/image/Dashboard.png"
+              alt="hero-img"
+            />
           </div>
-      <div class="text-center">
-          <div class="small-cards-set">
-            <div
-              data-aos="zoom-out-right"
-              class="sec-2-card-1 blur-card mb-2 mb-lg-0"
-            >
-              <a href="#">
-                <svg
-                  width="65"
-                  height="65"
-                  viewBox="0 0 65 65"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="0.818359"
-                    y="0.518555"
-                    width="64"
-                    height="64"
-                    rx="14"
-                    fill="#8048F8"
-                    fill-opacity="0.1"
-                  />
-                  <path
-                    d="M44.2157 32.4453C45.3639 31.6116 46.2331 30.5235 46.7645 29.3095C47.1306 30.2992 47.3223 31.4083 47.3223 32.6468C47.3223 35.6035 46.1869 37.6748 45.0225 39.0091C44.4447 39.6713 43.8648 40.147 43.423 40.4605C43.336 40.5222 43.2542 40.5776 43.1786 40.6273V42.6142C43.1786 44.1921 41.7871 45.4713 40.0708 45.4713H39.0349C37.8906 45.4713 36.963 44.6184 36.963 43.5666H32.8193C32.8193 44.6184 31.8918 45.4713 30.7475 45.4713H29.7116C27.9952 45.4713 26.6038 44.1921 26.6038 42.6142V42.2079C26.4249 42.1555 26.2246 42.0908 26.0084 42.0104C25.1798 41.703 24.1001 41.1637 23.1039 40.2353C21.8771 39.0921 21.1899 37.6614 20.8456 36.7637C20.7328 36.4698 20.507 36.2849 20.2872 36.2277C19.1213 35.9248 18.3164 34.9466 18.3164 33.8328V32.3205C18.3164 31.2235 19.1073 30.2595 20.2544 29.9579C20.4686 29.9016 20.7009 29.7093 20.8152 29.3915C21.0942 28.6159 21.6324 27.4698 22.6186 26.5507C23.4253 25.7988 24.296 25.2431 24.9569 24.8772C25.1572 24.7663 25.3402 24.6718 25.4988 24.5936V21.0173C25.4988 20.3439 25.979 19.8687 26.495 19.6762C27.0067 19.4852 27.6928 19.5172 28.2059 19.9629C28.7296 20.4177 29.4181 20.9618 30.1544 21.4048C30.9095 21.8592 31.618 22.1477 32.1959 22.2015L32.2069 22.2026C31.1129 23.6955 30.6091 25.5235 30.8434 27.3542C31.094 29.3127 32.7427 30.4904 34.1268 31.0174L39.0765 32.9018C40.4607 33.4288 42.5324 33.6675 44.2157 32.4453ZM26.0858 31.1847C26.944 31.1847 27.6397 30.5451 27.6397 29.7561C27.6397 28.9671 26.944 28.3275 26.0858 28.3275C25.2277 28.3275 24.5319 28.9671 24.5319 29.7561C24.5319 30.5451 25.2277 31.1847 26.0858 31.1847Z"
-                    fill="#8048F8"
-                  />
-                  <path
-                    d="M33.297 24.3643C33.8945 22.9764 35.0791 21.8041 36.6975 21.1876C39.8688 19.9797 43.5048 21.364 44.8188 24.2796C45.9078 26.696 45.06 29.4058 42.9322 30.9506C42.0697 31.5768 40.8852 31.5287 39.8698 31.1421L34.9201 29.2577C33.9048 28.8711 33.03 28.1352 32.9016 27.1317C32.8389 26.6416 32.8468 26.1518 32.9202 25.6736L33.297 24.3643ZM33.297 24.3643L33.0152 25.1999C33.0588 25.024 33.1115 24.8502 33.1729 24.6792C33.2109 24.5731 33.2523 24.4681 33.297 24.3643Z"
-                    fill="#8048F8"
-                  />
-                </svg>
-              </a>
-              <div>
-                <h1 class="text_white fs_xl fw-bolder 1">95%</h1>
-                <p class="text_white fs_lg fw_normal">Cost savings</p>
+          <div class="text-center">
+            <div class="small-cards-set">
+              <div
+                data-aos="zoom-out-right"
+                class="sec-2-card-1 blur-card mb-2 mb-lg-0"
+              >
+                <a href="#">
+                  <svg
+                    width="65"
+                    height="65"
+                    viewBox="0 0 65 65"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.818359"
+                      y="0.518555"
+                      width="64"
+                      height="64"
+                      rx="14"
+                      fill="#8048F8"
+                      fill-opacity="0.1"
+                    />
+                    <path
+                      d="M44.2157 32.4453C45.3639 31.6116 46.2331 30.5235 46.7645 29.3095C47.1306 30.2992 47.3223 31.4083 47.3223 32.6468C47.3223 35.6035 46.1869 37.6748 45.0225 39.0091C44.4447 39.6713 43.8648 40.147 43.423 40.4605C43.336 40.5222 43.2542 40.5776 43.1786 40.6273V42.6142C43.1786 44.1921 41.7871 45.4713 40.0708 45.4713H39.0349C37.8906 45.4713 36.963 44.6184 36.963 43.5666H32.8193C32.8193 44.6184 31.8918 45.4713 30.7475 45.4713H29.7116C27.9952 45.4713 26.6038 44.1921 26.6038 42.6142V42.2079C26.4249 42.1555 26.2246 42.0908 26.0084 42.0104C25.1798 41.703 24.1001 41.1637 23.1039 40.2353C21.8771 39.0921 21.1899 37.6614 20.8456 36.7637C20.7328 36.4698 20.507 36.2849 20.2872 36.2277C19.1213 35.9248 18.3164 34.9466 18.3164 33.8328V32.3205C18.3164 31.2235 19.1073 30.2595 20.2544 29.9579C20.4686 29.9016 20.7009 29.7093 20.8152 29.3915C21.0942 28.6159 21.6324 27.4698 22.6186 26.5507C23.4253 25.7988 24.296 25.2431 24.9569 24.8772C25.1572 24.7663 25.3402 24.6718 25.4988 24.5936V21.0173C25.4988 20.3439 25.979 19.8687 26.495 19.6762C27.0067 19.4852 27.6928 19.5172 28.2059 19.9629C28.7296 20.4177 29.4181 20.9618 30.1544 21.4048C30.9095 21.8592 31.618 22.1477 32.1959 22.2015L32.2069 22.2026C31.1129 23.6955 30.6091 25.5235 30.8434 27.3542C31.094 29.3127 32.7427 30.4904 34.1268 31.0174L39.0765 32.9018C40.4607 33.4288 42.5324 33.6675 44.2157 32.4453ZM26.0858 31.1847C26.944 31.1847 27.6397 30.5451 27.6397 29.7561C27.6397 28.9671 26.944 28.3275 26.0858 28.3275C25.2277 28.3275 24.5319 28.9671 24.5319 29.7561C24.5319 30.5451 25.2277 31.1847 26.0858 31.1847Z"
+                      fill="#8048F8"
+                    />
+                    <path
+                      d="M33.297 24.3643C33.8945 22.9764 35.0791 21.8041 36.6975 21.1876C39.8688 19.9797 43.5048 21.364 44.8188 24.2796C45.9078 26.696 45.06 29.4058 42.9322 30.9506C42.0697 31.5768 40.8852 31.5287 39.8698 31.1421L34.9201 29.2577C33.9048 28.8711 33.03 28.1352 32.9016 27.1317C32.8389 26.6416 32.8468 26.1518 32.9202 25.6736L33.297 24.3643ZM33.297 24.3643L33.0152 25.1999C33.0588 25.024 33.1115 24.8502 33.1729 24.6792C33.2109 24.5731 33.2523 24.4681 33.297 24.3643Z"
+                      fill="#8048F8"
+                    />
+                  </svg>
+                </a>
+                <div>
+                  <h1 class="text_white fs_xl fw-bolder 1">95%</h1>
+                  <p class="text_white fs_lg fw_normal">Cost savings</p>
+                </div>
               </div>
-            </div>
-            <div
-              data-aos="zoom-out-right"
-              class="sec-2-card-1 blur-card-2 mb-2 mb-lg-0"
-            >
-              <a href="#">
-                <svg
-                  width="65"
-                  height="65"
-                  viewBox="0 0 65 65"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="0.818359"
-                    y="0.4375"
-                    width="64"
-                    height="64"
-                    rx="14"
-                    fill="#0389FF"
-                    fill-opacity="0.1"
-                  />
-                  <path
-                    d="M35.3516 18.1924H23.5391C21.9075 18.1924 20.6007 19.4073 20.6007 20.9074L20.5859 42.6273C20.5859 44.1273 21.8927 45.3422 23.5243 45.3422H41.2579C42.8895 45.3422 44.2111 44.1273 44.2111 42.6273V26.3373L35.3516 18.1924ZM38.3048 39.9123H26.4922V37.1973H38.3048V39.9123ZM38.3048 34.4823H26.4922V31.7673H38.3048V34.4823ZM33.8751 27.6948V20.2286L41.9962 27.6948H33.8751Z"
-                    fill="#0389FF"
-                  />
-                </svg>
-              </a>
-              <div>
-                <h1 class="text_white fs_xl fw-bolder 1">47+</h1>
-                <p class="text_white fs_lg fw_normal">File Formates</p>
+              <div
+                data-aos="zoom-out-right"
+                class="sec-2-card-1 blur-card-2 mb-2 mb-lg-0"
+              >
+                <a href="#">
+                  <svg
+                    width="65"
+                    height="65"
+                    viewBox="0 0 65 65"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.818359"
+                      y="0.4375"
+                      width="64"
+                      height="64"
+                      rx="14"
+                      fill="#0389FF"
+                      fill-opacity="0.1"
+                    />
+                    <path
+                      d="M35.3516 18.1924H23.5391C21.9075 18.1924 20.6007 19.4073 20.6007 20.9074L20.5859 42.6273C20.5859 44.1273 21.8927 45.3422 23.5243 45.3422H41.2579C42.8895 45.3422 44.2111 44.1273 44.2111 42.6273V26.3373L35.3516 18.1924ZM38.3048 39.9123H26.4922V37.1973H38.3048V39.9123ZM38.3048 34.4823H26.4922V31.7673H38.3048V34.4823ZM33.8751 27.6948V20.2286L41.9962 27.6948H33.8751Z"
+                      fill="#0389FF"
+                    />
+                  </svg>
+                </a>
+                <div>
+                  <h1 class="text_white fs_xl fw-bolder 1">47+</h1>
+                  <p class="text_white fs_lg fw_normal">File Formates</p>
+                </div>
               </div>
-            </div>
             </div>
             <div class="small-cards-set2">
-            <div data-aos="zoom-out-left" class="sec-2-card-1 blur-card-3 mb-2 mb-md-0" >
-              <a href="#">
-                <svg
-                  width="65"
-                  height="65"
-                  viewBox="0 0 65 65"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="0.480469"
-                    y="0.960449"
-                    width="64"
-                    height="64"
-                    rx="14"
-                    fill="#F15642"
-                    fill-opacity="0.1"
-                  />
-                  <path
-                    d="M33.6623 21.7982V24.1618C35.589 24.4223 37.3766 25.309 38.7497 26.6853C40.1229 28.0617 41.0054 29.8513 41.2614 31.7786H43.625C43.3548 29.2271 42.2188 26.845 40.4061 25.0291C38.5934 23.2132 36.2134 22.0729 33.6623 21.7982ZM21.3182 31.7786H23.6818C23.9423 29.852 24.829 28.0643 26.2053 26.6912C27.5817 25.318 29.3714 24.4355 31.2986 24.1795V21.8159C28.7471 22.0861 26.365 23.2221 24.5491 25.0348C22.7332 26.8475 21.5929 29.2275 21.3182 31.7786ZM41.2614 34.1423C41.0018 36.0663 40.1177 37.852 38.7448 39.2248C37.372 40.5977 35.5864 41.4818 33.6623 41.7414V44.105C36.2139 43.8348 38.5959 42.6988 40.4118 40.8861C42.2278 39.0734 43.368 36.6934 43.6427 34.1423H41.2614ZM23.6996 34.1423H21.3359C21.6061 36.6938 22.7421 39.0759 24.5548 40.8918C26.3675 42.7077 28.7476 43.848 31.2986 44.1227V41.7591C29.372 41.4986 27.5844 40.6119 26.2112 39.2356C24.8381 37.8592 23.9555 36.0695 23.6996 34.1423ZM32.4805 27.6423C31.4286 27.6423 30.4004 27.9542 29.5258 28.5385C28.6513 29.1229 27.9696 29.9535 27.5671 30.9253C27.1646 31.897 27.0593 32.9663 27.2645 33.998C27.4697 35.0296 27.9762 35.9772 28.7199 36.721C29.4637 37.4647 30.4113 37.9712 31.4429 38.1764C32.4746 38.3816 33.5439 38.2763 34.5156 37.8738C35.4874 37.4713 36.318 36.7896 36.9024 35.9151C37.4867 35.0405 37.7986 34.0123 37.7986 32.9604C37.7986 31.55 37.2383 30.1973 36.241 29.1999C35.2436 28.2026 33.8909 27.6423 32.4805 27.6423ZM45.4805 33.5514H39.5714V32.3695H45.4805V33.5514ZM33.0714 25.8695H31.8896V19.9604H33.0714V25.8695ZM25.3896 33.5514H19.4805V32.3695H25.3896V33.5514ZM33.0714 45.9604H31.8896V40.0514H33.0714V45.9604Z"
-                    fill="#F15642"
-                  />
-                </svg>
-              </a>
-              <div>
-                <h1 class="text_white fs_xl fw-bolder 1">99%</h1>
-                <p class="text_white fs_lg fw_normal">Accuracy</p>
+              <div
+                data-aos="zoom-out-left"
+                class="sec-2-card-1 blur-card-3 mb-2 mb-md-0"
+              >
+                <a href="#">
+                  <svg
+                    width="65"
+                    height="65"
+                    viewBox="0 0 65 65"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.480469"
+                      y="0.960449"
+                      width="64"
+                      height="64"
+                      rx="14"
+                      fill="#F15642"
+                      fill-opacity="0.1"
+                    />
+                    <path
+                      d="M33.6623 21.7982V24.1618C35.589 24.4223 37.3766 25.309 38.7497 26.6853C40.1229 28.0617 41.0054 29.8513 41.2614 31.7786H43.625C43.3548 29.2271 42.2188 26.845 40.4061 25.0291C38.5934 23.2132 36.2134 22.0729 33.6623 21.7982ZM21.3182 31.7786H23.6818C23.9423 29.852 24.829 28.0643 26.2053 26.6912C27.5817 25.318 29.3714 24.4355 31.2986 24.1795V21.8159C28.7471 22.0861 26.365 23.2221 24.5491 25.0348C22.7332 26.8475 21.5929 29.2275 21.3182 31.7786ZM41.2614 34.1423C41.0018 36.0663 40.1177 37.852 38.7448 39.2248C37.372 40.5977 35.5864 41.4818 33.6623 41.7414V44.105C36.2139 43.8348 38.5959 42.6988 40.4118 40.8861C42.2278 39.0734 43.368 36.6934 43.6427 34.1423H41.2614ZM23.6996 34.1423H21.3359C21.6061 36.6938 22.7421 39.0759 24.5548 40.8918C26.3675 42.7077 28.7476 43.848 31.2986 44.1227V41.7591C29.372 41.4986 27.5844 40.6119 26.2112 39.2356C24.8381 37.8592 23.9555 36.0695 23.6996 34.1423ZM32.4805 27.6423C31.4286 27.6423 30.4004 27.9542 29.5258 28.5385C28.6513 29.1229 27.9696 29.9535 27.5671 30.9253C27.1646 31.897 27.0593 32.9663 27.2645 33.998C27.4697 35.0296 27.9762 35.9772 28.7199 36.721C29.4637 37.4647 30.4113 37.9712 31.4429 38.1764C32.4746 38.3816 33.5439 38.2763 34.5156 37.8738C35.4874 37.4713 36.318 36.7896 36.9024 35.9151C37.4867 35.0405 37.7986 34.0123 37.7986 32.9604C37.7986 31.55 37.2383 30.1973 36.241 29.1999C35.2436 28.2026 33.8909 27.6423 32.4805 27.6423ZM45.4805 33.5514H39.5714V32.3695H45.4805V33.5514ZM33.0714 25.8695H31.8896V19.9604H33.0714V25.8695ZM25.3896 33.5514H19.4805V32.3695H25.3896V33.5514ZM33.0714 45.9604H31.8896V40.0514H33.0714V45.9604Z"
+                      fill="#F15642"
+                    />
+                  </svg>
+                </a>
+                <div>
+                  <h1 class="text_white fs_xl fw-bolder 1">99%</h1>
+                  <p class="text_white fs_lg fw_normal">Accuracy</p>
+                </div>
               </div>
-            </div>
-            <div data-aos="zoom-out-left" class="sec-2-card-1 blur-card-4">
-              <a href="#">
-                <svg
-                  width="65"
-                  height="65"
-                  viewBox="0 0 65 65"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="0.480469"
-                    y="0.0683594"
-                    width="64"
-                    height="64"
-                    rx="14"
-                    fill="#23A566"
-                    fill-opacity="0.1"
-                  />
-                  <path
-                    d="M37.0957 34.4924C35.9223 34.4924 34.7752 34.8123 33.7995 35.4117C32.8239 36.011 32.0634 36.8629 31.6143 37.8596C31.1653 38.8563 31.0478 39.953 31.2767 41.0111C31.5057 42.0692 32.0707 43.0411 32.9005 43.8039C33.7302 44.5668 34.7874 45.0863 35.9383 45.2967C37.0892 45.5072 38.2821 45.3992 39.3662 44.9863C40.4503 44.5735 41.3769 43.8744 42.0289 42.9774C42.6808 42.0804 43.0288 41.0258 43.0288 39.947C43.0288 39.2307 42.8753 38.5214 42.5771 37.8596C42.279 37.1978 41.8419 36.5965 41.291 36.09C40.7401 35.5835 40.086 35.1818 39.3662 34.9076C38.6464 34.6335 37.8749 34.4924 37.0957 34.4924ZM39.0734 38.7349H36.4365V39.3409H38.4142C38.589 39.3409 38.7567 39.4048 38.8803 39.5184C39.004 39.6321 39.0734 39.7862 39.0734 39.947V41.7652C39.0734 41.9259 39.004 42.0801 38.8803 42.1937C38.7567 42.3074 38.589 42.3712 38.4142 42.3712H37.755V42.9773H36.4365V42.3712H35.1181V41.1591H37.755V40.553H35.7773C35.6025 40.553 35.4348 40.4892 35.3111 40.3755C35.1875 40.2619 35.1181 40.1077 35.1181 39.947V38.1288C35.1181 37.9681 35.1875 37.8139 35.3111 37.7003C35.4348 37.5866 35.6025 37.5227 35.7773 37.5227H36.4365V36.9167H37.755V37.5227H39.0734V38.7349ZM30.5035 26.0076C29.8042 26.0076 29.1334 25.7522 28.6389 25.2975C28.1444 24.8429 27.8666 24.2263 27.8666 23.5833V22.3712H33.1404V23.5833C33.1404 24.2263 32.8626 24.8429 32.3681 25.2975C31.8736 25.7522 31.2028 26.0076 30.5035 26.0076ZM30.5035 35.7046C31.0305 35.7026 31.5457 35.8485 31.9802 36.1227C31.167 37.0426 30.665 38.1615 30.5365 39.3409H27.8666V38.1288C27.8666 37.4859 28.1444 36.8692 28.6389 36.4146C29.1334 35.96 29.8042 35.7046 30.5035 35.7046ZM30.8067 41.7652C30.9499 42.188 31.1445 42.5946 31.3869 42.9773H21.9336V41.7652H23.252V38.7349C23.2452 37.3913 23.683 36.0777 24.5071 34.9682C25.3313 33.8587 26.5029 33.0058 27.8666 32.5227V29.1894C26.5029 28.7063 25.3313 27.8535 24.5071 26.744C23.683 25.6345 23.2452 24.3208 23.252 22.9773V19.947H21.9336V18.7349H39.0734V19.947H37.755V22.9773C37.7618 24.3208 37.324 25.6345 36.4999 26.744C35.6757 27.8535 34.5041 28.7063 33.1404 29.1894V32.5227C34.0793 32.8616 34.9304 33.3778 35.6389 34.0379C34.6432 34.2419 33.7131 34.6569 32.9229 35.25C32.4078 34.8864 31.8033 34.6449 31.1627 34.547V27.1652C32.0837 27.022 32.9199 26.5839 33.5232 25.9283C34.1264 25.2728 34.4579 24.4421 34.4588 23.5833V21.7652C34.4588 21.6044 34.3894 21.4503 34.2658 21.3366C34.1421 21.223 33.9745 21.1591 33.7996 21.1591H27.2074C27.0325 21.1591 26.8649 21.223 26.7412 21.3366C26.6176 21.4503 26.5482 21.6044 26.5482 21.7652V23.5833C26.5491 24.4421 26.8806 25.2728 27.4839 25.9283C28.0871 26.5839 28.9233 27.022 29.8443 27.1652V34.547C28.9233 34.6901 28.0871 35.1282 27.4839 35.7838C26.8806 36.4394 26.5491 37.2701 26.5482 38.1288V39.947C26.5482 40.1077 26.6176 40.2619 26.7412 40.3755C26.8649 40.4892 27.0325 40.553 27.2074 40.553H30.5365C30.582 40.9644 30.6725 41.3705 30.8067 41.7652Z"
-                    fill="#23A566"
-                  />
-                </svg>
-              </a>
-              <div>
-                <h1 class="text_white fs_xl fw-bolder 1">95%</h1>
-                <p class="text_white fs_lg fw_normal">Time Savings</p>
+              <div data-aos="zoom-out-left" class="sec-2-card-1 blur-card-4">
+                <a href="#">
+                  <svg
+                    width="65"
+                    height="65"
+                    viewBox="0 0 65 65"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.480469"
+                      y="0.0683594"
+                      width="64"
+                      height="64"
+                      rx="14"
+                      fill="#23A566"
+                      fill-opacity="0.1"
+                    />
+                    <path
+                      d="M37.0957 34.4924C35.9223 34.4924 34.7752 34.8123 33.7995 35.4117C32.8239 36.011 32.0634 36.8629 31.6143 37.8596C31.1653 38.8563 31.0478 39.953 31.2767 41.0111C31.5057 42.0692 32.0707 43.0411 32.9005 43.8039C33.7302 44.5668 34.7874 45.0863 35.9383 45.2967C37.0892 45.5072 38.2821 45.3992 39.3662 44.9863C40.4503 44.5735 41.3769 43.8744 42.0289 42.9774C42.6808 42.0804 43.0288 41.0258 43.0288 39.947C43.0288 39.2307 42.8753 38.5214 42.5771 37.8596C42.279 37.1978 41.8419 36.5965 41.291 36.09C40.7401 35.5835 40.086 35.1818 39.3662 34.9076C38.6464 34.6335 37.8749 34.4924 37.0957 34.4924ZM39.0734 38.7349H36.4365V39.3409H38.4142C38.589 39.3409 38.7567 39.4048 38.8803 39.5184C39.004 39.6321 39.0734 39.7862 39.0734 39.947V41.7652C39.0734 41.9259 39.004 42.0801 38.8803 42.1937C38.7567 42.3074 38.589 42.3712 38.4142 42.3712H37.755V42.9773H36.4365V42.3712H35.1181V41.1591H37.755V40.553H35.7773C35.6025 40.553 35.4348 40.4892 35.3111 40.3755C35.1875 40.2619 35.1181 40.1077 35.1181 39.947V38.1288C35.1181 37.9681 35.1875 37.8139 35.3111 37.7003C35.4348 37.5866 35.6025 37.5227 35.7773 37.5227H36.4365V36.9167H37.755V37.5227H39.0734V38.7349ZM30.5035 26.0076C29.8042 26.0076 29.1334 25.7522 28.6389 25.2975C28.1444 24.8429 27.8666 24.2263 27.8666 23.5833V22.3712H33.1404V23.5833C33.1404 24.2263 32.8626 24.8429 32.3681 25.2975C31.8736 25.7522 31.2028 26.0076 30.5035 26.0076ZM30.5035 35.7046C31.0305 35.7026 31.5457 35.8485 31.9802 36.1227C31.167 37.0426 30.665 38.1615 30.5365 39.3409H27.8666V38.1288C27.8666 37.4859 28.1444 36.8692 28.6389 36.4146C29.1334 35.96 29.8042 35.7046 30.5035 35.7046ZM30.8067 41.7652C30.9499 42.188 31.1445 42.5946 31.3869 42.9773H21.9336V41.7652H23.252V38.7349C23.2452 37.3913 23.683 36.0777 24.5071 34.9682C25.3313 33.8587 26.5029 33.0058 27.8666 32.5227V29.1894C26.5029 28.7063 25.3313 27.8535 24.5071 26.744C23.683 25.6345 23.2452 24.3208 23.252 22.9773V19.947H21.9336V18.7349H39.0734V19.947H37.755V22.9773C37.7618 24.3208 37.324 25.6345 36.4999 26.744C35.6757 27.8535 34.5041 28.7063 33.1404 29.1894V32.5227C34.0793 32.8616 34.9304 33.3778 35.6389 34.0379C34.6432 34.2419 33.7131 34.6569 32.9229 35.25C32.4078 34.8864 31.8033 34.6449 31.1627 34.547V27.1652C32.0837 27.022 32.9199 26.5839 33.5232 25.9283C34.1264 25.2728 34.4579 24.4421 34.4588 23.5833V21.7652C34.4588 21.6044 34.3894 21.4503 34.2658 21.3366C34.1421 21.223 33.9745 21.1591 33.7996 21.1591H27.2074C27.0325 21.1591 26.8649 21.223 26.7412 21.3366C26.6176 21.4503 26.5482 21.6044 26.5482 21.7652V23.5833C26.5491 24.4421 26.8806 25.2728 27.4839 25.9283C28.0871 26.5839 28.9233 27.022 29.8443 27.1652V34.547C28.9233 34.6901 28.0871 35.1282 27.4839 35.7838C26.8806 36.4394 26.5491 37.2701 26.5482 38.1288V39.947C26.5482 40.1077 26.6176 40.2619 26.7412 40.3755C26.8649 40.4892 27.0325 40.553 27.2074 40.553H30.5365C30.582 40.9644 30.6725 41.3705 30.8067 41.7652Z"
+                      fill="#23A566"
+                    />
+                  </svg>
+                </a>
+                <div>
+                  <h1 class="text_white fs_xl fw-bolder 1">95%</h1>
+                  <p class="text_white fs_lg fw_normal">Time Savings</p>
+                </div>
               </div>
             </div>
           </div>
-          </div></div>
-        <span class="hero_ep_1 d-lg-block d-none position-absolute"></span>
         </div>
-        <!-- <div class=" container ff-jak ">
-                <div class=" position-relative py-5 "><img class=" w-100 " data-aos="fade-up" src=" ./assets/image/Dashboard.png " alt=" Dashboard ">
-
-                    <div data-aos="fade-right" class=" card_img rat_icon m-3 ">
-                        <div class=" d-flex align-items-center gap-3 ">
-                            <img class=" w-50 " src=" ./assets/image/rat_icon.png " alt=" rat ">
-                            <div>
-                                <h3 class=" text_white fs_xl fw-bolder ">95%</h3>
-                                <p class=" text_white fs_lg fw_normal ">Cost savings</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-right" class=" card_img doc_icon m-3 ">
-                        <div class=" d-flex align-items-center gap-3 ">
-                            <img class=" w-50 " src=" ./assets/image/doc_icon.png " alt=" doc ">
-                            <div>
-                                <h3 class=" text_white fs_xl fw-bolder ">47+</h3>
-                                <p class=" text_white fs_lg fw_normal ">File formats</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" class=" card_img share_icon m-3 ">
-                        <div class=" d-flex align-items-center gap-3 ">
-                            <img class=" w-50 " src=" ./assets/image/share_icon.png " alt=" rat ">
-                            <div>
-                                <h3 class=" text_white fs_xl fw-bolder ">95%</h3>
-                                <p class=" text_white fs_lg fw_normal ">Time savings</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-left" class=" card_img four_img_icon m-3 ">
-                        <div class=" d-flex align-items-center gap-3 ">
-                            <img class=" w-50 " src=" ./assets/image/four_img_icon.png " alt=" rat ">
-                            <div>
-                                <h3 class=" text_white fs_xl fw-bolder ">99%</h3>
-                                <p class=" text_white fs_lg fw_normal ">Accuracy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+        <span class="hero_ep_1 d-lg-block d-none position-absolute"></span>
       </div>
     </div>
     <!-- slider -->
@@ -336,54 +325,54 @@
           <img
             class="slides_imgs"
             src=" ./assets/image/cbcs_img.png "
-            alt=" cbcs "
+            alt=" slide "
           />
           <img
             class="slides_imgs"
             src=" ./assets/image/NHS_IMG.png "
-            alt=" nhs "
+            alt=" slide "
           />
           <img
             class="slides_imgs"
             src=" ./assets/image/air_img.png "
-            alt=" air "
+            alt=" slide "
           />
           <img
             class="slides_imgs"
             src=" ./assets/image/royal_img.png "
-            alt=" royal "
+            alt=" slide "
           />
           <img
             class="slides_imgs"
             src=" ./assets/image/cbcs_img.png "
-            alt=" cbcs "
+            alt=" slide "
           />
           <img
             class="slides_imgs"
             src=" ./assets/image/wb_img.png "
-            alt=" wb "
+            alt=" slide "
           />
           <img
             class="slides_imgs"
             src=" ./assets/image/img_b.png "
-            alt=" img_b "
+            alt=" slide "
           />
           <img
             class="slides_imgs"
             src=" ./assets/image/rubiix_img.png "
-            alt=" rubiix "
+            alt=" slide "
           />
           <img
             class="slides_imgs"
             src=" ./assets/image/wb_img.png "
-            alt=" wb "
+            alt=" slide "
           />
         </div>
       </div>
     </div>
     <!-- sec-1-->
     <section id="extract">
-      <div class="d-flex justify-content-center overflow pt-5 ">
+      <div class="d-flex justify-content-center overflow pt-5">
         <div class="container">
           <div class="row justify-content-between align-items-center">
             <div class="col-lg-6" data-aos="fade-down">
@@ -436,26 +425,51 @@
               data-aos-duration="1500"
             >
               <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div data-aos="flip-up" class="accordion-item aos-init aos-animate" data-aos-duration="1500">
-                    <div class="d-flex">
-                      <img src="./assets/image/according.png" alt="accordion-img" id="flush-collapseOne" class="accordion-collapse acc-img-set tranlate-xy collapse show" data-bs-parent="#accordionFlushExample" style="">
-                      <div class="d-block">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button ff-jak fw-medium fs-xl white op_8 px-0 ps-sm-3 d-block" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-                          Time-Saving AI Integrations                        </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample" style="">
-                          <div class="accordion-body mx-370 ff-jak fs-lg fw-normal lh-170 bs-gry">
-                            Posuere ultrices aliquet risus malesuada viverra nec
-                            praesent. Sed nisl facilisi augue.
-                          </div>
+                <div
+                  data-aos="flip-up"
+                  class="accordion-item aos-init aos-animate"
+                  data-aos-duration="1500"
+                >
+                  <div class="d-flex">
+                    <img
+                      src="./assets/image/according.png"
+                      alt="accordion-img"
+                      id="flush-collapseOne"
+                      class="accordion-collapse acc-img-set tranlate-xy collapse show"
+                      data-bs-parent="#accordionFlushExample"
+                    />
+                    <div class="d-block">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button ff-jak fw-medium fs-xl white op_8 px-0 ps-sm-3 d-block"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="true"
+                          aria-controls="flush-collapseOne"
+                        >
+                          Time-Saving AI Integrations
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionFlushExample"
+                        style=""
+                      >
+                        <div
+                          class="accordion-body mx-370 ff-jak fs-lg fw-normal lh-170 bs-gry"
+                        >
+                          Posuere ultrices aliquet risus malesuada viverra nec
+                          praesent. Sed nisl facilisi augue.
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
                 <div
                   data-aos="flip-up"
-                  class="accordion-item"
+                  class="accordion-item aos-init aos-animate"
                   data-aos-duration="1500"
                 >
                   <div class="d-flex">
@@ -463,18 +477,19 @@
                       src="./assets/image/according.png"
                       alt="accordion-img"
                       id="flush-collapsetwo"
-                      class="accordion-collapse collapse acc-img-set tranlate-xy"
+                      class="accordion-collapse acc-img-set tranlate-xy collapse"
                       data-bs-parent="#accordionFlushExample"
+                      style=""
                     />
                     <div class="d-block">
                       <h2 class="accordion-header">
                         <button
-                          class="accordion-button collapsed ff-jak fw-medium fs-xl px-0 white op_8 ps-sm-3 d-block"
+                          class="accordion-button ff-jak fw-medium fs-xl white op_8 px-0 ps-sm-3 d-block collapsed"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#flush-collapsetwo"
                           aria-expanded="false"
-                          aria-controls="flush-collapsetwo"
+                          aria-controls="flush-collapseOne"
                         >
                           Enterprise-Level Scalability
                         </button>
@@ -483,47 +498,7 @@
                         id="flush-collapsetwo"
                         class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample"
-                      >
-                        <div
-                          class="accordion-body mx-370 ff-jak fs-lg fw-normal  lh-170 bs-gry"
-                        >
-                          Posuere ultrices aliquet risus malesuada viverra nec
-                          praesent. Sed nisl facilisi augue.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  data-aos="flip-down"
-                  class="accordion-item"
-                  data-aos-duration="1500"
-                >
-                  <div class="d-flex">
-                    <img
-                      src="./assets/image/according.png"
-                      alt="accordion-img"
-                      id="flush-collapsethree"
-                      class="accordion-collapse collapse acc-img-set tranlate-xy"
-                      data-bs-parent="#accordionFlushExample"
-                    />
-                    <div class="d-block">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed ff-jak px-0 fw-medium fs-xl white op_8 ps-sm-3 d-block"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapsethree"
-                          aria-expanded="false"
-                          aria-controls="flush-collapsethree"
-                        >
-                          Cloud-Based For Multiple Locations
-                        </button>
-                      </h2>
-                      <div
-                        id="flush-collapsethree"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample"
+                        style=""
                       >
                         <div
                           class="accordion-body mx-370 ff-jak fs-lg fw-normal lh-170 bs-gry"
@@ -537,34 +512,36 @@
                 </div>
                 <div
                   data-aos="flip-up"
-                  class="accordion-item"
+                  class="accordion-item aos-init aos-animate"
                   data-aos-duration="1500"
                 >
                   <div class="d-flex">
                     <img
                       src="./assets/image/according.png"
                       alt="accordion-img"
-                      id="flush-collapsefour"
-                      class="accordion-collapse collapse acc-img-set tranlate-xy"
+                      id="flush-collapsethree"
+                      class="accordion-collapse acc-img-set tranlate-xy collapse"
                       data-bs-parent="#accordionFlushExample"
+                      style=""
                     />
                     <div class="d-block">
                       <h2 class="accordion-header">
                         <button
-                          class="accordion-button collapsed ff-jak fw-medium fs-xl px-0 white op_8 ps-sm-3 d-block"
+                          class="accordion-button ff-jak fw-medium fs-xl white op_8 px-0 ps-sm-3 d-block collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapsefour"
+                          data-bs-target="#flush-collapsethree"
                           aria-expanded="false"
-                          aria-controls="flush-collapsefour"
+                          aria-controls="flush-collapseOne"
                         >
-                          Collaborative Work Among Teams
+                          Cloud-Based For Multiple Locations
                         </button>
                       </h2>
                       <div
-                        id="flush-collapsefour"
+                        id="flush-collapsethree"
                         class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample"
+                        style=""
                       >
                         <div
                           class="accordion-body mx-370 ff-jak fs-lg fw-normal lh-170 bs-gry"
@@ -577,38 +554,40 @@
                   </div>
                 </div>
                 <div
-                  data-aos="flip-down"
-                  class="accordion-item"
+                  data-aos="flip-up"
+                  class="accordion-item aos-init aos-animate"
                   data-aos-duration="1500"
                 >
                   <div class="d-flex">
                     <img
                       src="./assets/image/according.png"
                       alt="accordion-img"
-                      id="flush-collapsefive"
-                      class="accordion-collapse collapse acc-img-set tranlate-xy"
+                      id="flush-collapsefour"
+                      class="accordion-collapse acc-img-set tranlate-xy collapse"
                       data-bs-parent="#accordionFlushExample"
+                      style=""
                     />
                     <div class="d-block">
                       <h2 class="accordion-header">
                         <button
-                          class="accordion-button collapsed ff-jak px-0 fw-medium fs-xl white op_8 ps-sm-3 d-block"
+                          class="accordion-button ff-jak fw-medium fs-xl white op_8 px-0 ps-sm-3 d-block collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapsefive"
+                          data-bs-target="#flush-collapsefour"
                           aria-expanded="false"
-                          aria-controls="flush-collapsefive"
+                          aria-controls="flush-collapseOne"
                         >
-                          Proactive Risk Assessment Reports
+                          Collaborative Work Among Teams
                         </button>
                       </h2>
                       <div
-                        id="flush-collapsefive"
+                        id="flush-collapsefour"
                         class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample"
+                        style=""
                       >
                         <div
-                          class="accordion-body ff-jak fs-lg fw-normal lh-170 bs-gry"
+                          class="accordion-body mx-370 ff-jak fs-lg fw-normal lh-170 bs-gry"
                         >
                           Posuere ultrices aliquet risus malesuada viverra nec
                           praesent. Sed nisl facilisi augue.
@@ -617,24 +596,72 @@
                     </div>
                   </div>
                 </div>
-                <div data-aos="flip-up" class="accordion-item">
+                <div
+                  data-aos="flip-up"
+                  class="accordion-item aos-init aos-animate"
+                  data-aos-duration="1500"
+                >
+                  <div class="d-flex">
+                    <img
+                      src="./assets/image/according.png"
+                      alt="accordion-img"
+                      id="flush-collapsefive"
+                      class="accordion-collapse acc-img-set tranlate-xy collapse"
+                      data-bs-parent="#accordionFlushExample"
+                      style=""
+                    />
+                    <div class="d-block">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button ff-jak fw-medium fs-xl white op_8 px-0 ps-sm-3 d-block collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapsefive"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
+                        >
+                          Proactive Risk Assessment Reports
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapsefive"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                        style=""
+                      >
+                        <div
+                          class="accordion-body mx-370 ff-jak fs-lg fw-normal lh-170 bs-gry"
+                        >
+                          Posuere ultrices aliquet risus malesuada viverra nec
+                          praesent. Sed nisl facilisi augue.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-aos="flip-up"
+                  class="accordion-item aos-init aos-animate"
+                  data-aos-duration="1500"
+                >
                   <div class="d-flex">
                     <img
                       src="./assets/image/according.png"
                       alt="accordion-img"
                       id="flush-collapsesix"
-                      class="accordion-collapse collapse acc-img-set tranlate-xy"
+                      class="accordion-collapse acc-img-set tranlate-xy collapse"
                       data-bs-parent="#accordionFlushExample"
+                      style=""
                     />
                     <div class="d-block">
                       <h2 class="accordion-header">
                         <button
-                          class="accordion-button ff-jak fw-medium fs-xl ps-sm-3 px-0 white op_8 collapsed d-block"
+                          class="accordion-button ff-jak fw-medium fs-xl white op_8 px-0 ps-sm-3 d-block collapsed"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#flush-collapsesix"
                           aria-expanded="false"
-                          aria-controls="flush-collapsesix"
+                          aria-controls="flush-collapseOne"
                         >
                           High Accuracy To Avoid Oversights
                         </button>
@@ -643,9 +670,10 @@
                         id="flush-collapsesix"
                         class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample"
+                        style=""
                       >
                         <div
-                          class="ff-jakarta accordion-body ff-jak fs-lg fw-normal lh-170 bs-gry"
+                          class="accordion-body mx-370 ff-jak fs-lg fw-normal lh-170 bs-gry"
                         >
                           Posuere ultrices aliquet risus malesuada viverra nec
                           praesent. Sed nisl facilisi augue.
@@ -682,7 +710,7 @@
                 <img
                   class="p-3"
                   src=" ./assets/image/save_icon.png "
-                  alt=" save_icon "
+                  alt=" icon "
                 />
                 <p class="text_gray2 ps-3">High Accuracy Rate</p>
               </div>
@@ -695,7 +723,7 @@
                 <img
                   class="p-3"
                   src=" ./assets/image/save_icon.png "
-                  alt=" save_icon "
+                  alt="icon "
                 />
                 <p class="text_gray2 ps-3">Time Saving</p>
               </div>
@@ -708,7 +736,7 @@
                 <img
                   class="p-3"
                   src=" ./assets/image/save_icon.png "
-                  alt=" save_icon "
+                  alt="icon "
                 />
                 <p class="text_gray2 ps-3">Cost Saving</p>
               </div>
@@ -721,7 +749,7 @@
                 <img
                   class="p-3"
                   src=" ./assets/image/save_icon.png "
-                  alt=" save_icon "
+                  alt="icon "
                 />
                 <p class="text_gray2 ps-3">Labor Hours Gained Back</p>
               </div>
@@ -737,7 +765,7 @@
             </div>
           </div>
         </div>
-      <span class="sec_3_ep_1 position-absolute"></span>
+        <span class="sec_3_ep_1 position-absolute"></span>
       </div>
     </section>
     <!-- sec-4 -->
@@ -746,12 +774,12 @@
         <h2 class="fs_4xl text_white fw-medium ff-jak text-center py-4">
           Testimonials
         </h2>
-        <div class="responsive slick_slider_one">
+        <div class="responsive s5-slider">
           <div class="slider_card p-4 text-center mx-2">
             <img
               class="mx-auto pb-2"
               src=" ./assets/image/royal_college.png "
-              alt=" "
+              alt="royal "
             />
             <p class="text_gray2 fs-lg mw_650 mx-auto ff-jak">
               “Quick, well designed, and saved our team over 97% of time. Our
@@ -764,7 +792,7 @@
             <img
               class="mx-auto pb-2"
               src=" ./assets/image/royal_college.png "
-              alt=" "
+              alt="royal "
             />
             <p class="text_gray2 fs-lg mw_650 mx-auto ff-jak">
               “Quick, well designed, and saved our team over 97% of time. Our
@@ -777,7 +805,20 @@
             <img
               class="mx-auto pb-2"
               src=" ./assets/image/royal_college.png "
-              alt=" "
+              alt="royal "
+            />
+            <p class="text_gray2 fs-lg mw_650 mx-auto ff-jak">
+              “Quick, well designed, and saved our team over 97% of time. Our
+              team was able to meet subject access requests and meet GDPR
+              mandates using the iDox.ai redaction solution.”
+            </p>
+            <p class="fs-lg text_gray2 text-center pt-5 ff-jak">Carl Bevan</p>
+          </div>
+          <div class="slider_card p-4 text-center mx-2">
+            <img
+              class="mx-auto pb-2"
+              src=" ./assets/image/royal_college.png "
+              alt="royal "
             />
             <p class="text_gray2 fs-lg mw_650 mx-auto ff-jak">
               “Quick, well designed, and saved our team over 97% of time. Our
@@ -787,6 +828,7 @@
             <p class="fs-lg text_gray2 text-center pt-5 ff-jak">Carl Bevan</p>
           </div>
         </div>
+
         <span class="sec_4_1 position-absolute"></span>
       </div>
     </section>
@@ -860,7 +902,9 @@
                   alt=" arrow "
                 />
               </div>
-              <p class="fs_xl fw-medium text_white pt-1 pt-sm-3">Select data model</p>
+              <p class="fs_xl fw-medium text_white pt-1 pt-sm-3">
+                Select data model
+              </p>
             </div>
             <div class="col-xl-3 col-sm-6 pt-sm-5 pt-xl-0" data-aos="fade-up">
               <div class="position-relative">
@@ -954,7 +998,7 @@
             </div>
           </div>
         </div>
-      <span class="sec_7_ep_1 position-absolute"></span>
+        <span class="sec_7_ep_1 position-absolute"></span>
       </div>
     </section>
     <!-- sec-8-->
@@ -995,7 +1039,7 @@
             </div>
           </div>
         </div>
-       <span class="sec_8_ep_1 position-absolute"></span>
+        <span class="sec_8_ep_1 position-absolute"></span>
       </div>
     </section>
     <!-- sec-9 -->
@@ -1012,7 +1056,9 @@
               data-aos="fade-down-right"
             >
               <h2 class="text_white fs_3xl fw-bold text-center phara">$0.99</h2>
-              <p class="text_white fs_xxl fw-medium text-center pb-sm-4">7 Days</p>
+              <p class="text_white fs_xxl fw-medium text-center pb-sm-4">
+                7 Days
+              </p>
 
               <div class="d-flex align-items-center pt-sm-5 pt-3">
                 <img src=" ./assets/image/thick.png " alt=" thick " />
@@ -1068,7 +1114,9 @@
               data-aos="fade-down-left"
             >
               <h2 class="text_white fs_3xl fw-bold text-center phara">$190</h2>
-              <p class="text_white fs_xxl fw-medium text-center pb-sm-4">Basic</p>
+              <p class="text_white fs_xxl fw-medium text-center pb-sm-4">
+                Basic
+              </p>
 
               <div class="d-flex align-items-center pt-sm-5 pt-3">
                 <img src=" ./assets/image/thick.png " alt=" thick " />
@@ -1094,24 +1142,10 @@
         </div>
         <span class="sec_9_ep_1 position-absolute"></span>
         <span class="sec_9_ep_2 position-absolute"></span>
-        <!-- <div>
-          <img
-            class="ellipse_left d-none d-sm-block"
-            src=" ./assets/image/the_plan_sec.png "
-            alt=" left "
-          />
-        </div>
-        <div>
-          <img
-            class="ellipse_center d-none d-lg-block"
-            src=" ./assets/image/thebest_sect.png "
-            alt=" center "
-          />
-        </div> -->
       </div>
     </section>
     <!--sec-10 -->
-    <section4>
+    <section>
       <div class="bg_image vh-50">
         <div class="d-flex justify-content-center py-5">
           <div class="container ff-jak" data-aos="fade-up-right">
@@ -1169,7 +1203,9 @@
                 <ul class="ps-0">
                   <li class="fs_xl text_white">PRODUCTS</li>
                   <li>
-                    <a href=" # " class="pt-4 ftr_set">iDox.ai Data Discovery</a>
+                    <a href=" # " class="pt-4 ftr_set"
+                      >iDox.ai Data Discovery</a
+                    >
                   </li>
                   <li>
                     <a href=" # " class="ftr_set">iDox.ai Data Redact</a>
@@ -1264,7 +1300,11 @@
             </div>
           </div>
         </div>
-        <p class="fw-normal text-white ftr_line py-3 fs-lg ff-jak op_~7 text-center ">2023 © Foxit Software Incorporated. All rights reserved.</p>
+        <p
+          class="fw-normal text-white ftr_line py-3 fs-lg ff-jak op_7 text-center"
+        >
+          2023 © Foxit Software Incorporated. All rights reserved.
+        </p>
       </div>
     </footer>
 
@@ -1293,65 +1333,65 @@
       });
     </script>
     <!--slider js-->
-   <script>
-        $('.slider').slick({
-            dots: false,
-            infinite: true,
-            prevArrow: 'false',
-            nextArrow: 'false',
-            variableWidth: true,
-            autoplay: true,
-            autoplaySpeed: 0,
-            speed: 1200,
-            pauseOnHover: true,
-            pauseOnfocus: false,
-            cssEase: 'linear'
-        });
+    <script>
+      $(".slider").slick({
+        dots: false,
+        infinite: true,
+        prevArrow: "false",
+        nextArrow: "false",
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 1200,
+        pauseOnHover: true,
+        pauseOnfocus: false,
+        cssEase: "linear",
+      });
     </script>
 
     <script>
-        $('.responsive').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true,
-            focusOnSelect: true,
-            centerPadding: '300px',
-            responsive: [
-                {
-                    breakpoint: 1100,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true,
-                        centerPadding: 0,
-                        speed: 500,
-                    }
-                },
-                {
-                    breakpoint: 750,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true,
-                        centerPadding: 0,
-                        speed: 500,
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        centerMode: false
-                    }
-                }
-            ]
-        });
+      $(".s5-slider").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: "300px",
+        responsive: [
+          {
+            breakpoint: 1100,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+              centerPadding: 0,
+              speed: 500,
+            },
+          },
+          {
+            breakpoint: 750,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+              centerPadding: 0,
+              speed: 500,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: false,
+            },
+          },
+        ],
+      });
     </script>
   </body>
 </html>
